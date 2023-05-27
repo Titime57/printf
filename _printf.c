@@ -1,14 +1,14 @@
 #include "main.h"
 void print_buffer(char buffer[], int *buff_ind);
 /**
- * _printf - print function
+ * _printf - printf function
  * @format: format
  * Return: printed chars
  */
 int _printf(const char *format, ...)
 {
 	int i, printed = 0, printed_chars = 0;
-	int flags, width, precision, size, buff_end = 0;
+	int flags, width, precision, size, buff_ind = 0;
 	va_list list;
 	char buffer[BUFF_SIZE];
 
@@ -28,7 +28,7 @@ int _printf(const char *format, ...)
 		else
 		{
 			print_buffer(buffer, &buff_ind);
-			falgs = get_flags(format, &i);
+			flags = get_flags(format, &i);
 			width = get_width(format, &i, list);
 			precision = get_precision(format, &i, list);
 			size = get_size(format, &i);
