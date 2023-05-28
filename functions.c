@@ -20,7 +20,8 @@ int print_char(va_list types, char buffer[], int flags
 /***********PRINT A STRING************/
 /**
  * print_string - prints a string
- * @types: list of arguments$@buffer: buffer array to handle print
+ * @types: list of arguments
+ * @buffer: buffer array to handle print
  * @flags: calculates active flags
  * @width: get width
  * @precision: precision specification
@@ -122,7 +123,8 @@ int print_int(va_list types, char buffer[], int flags
 	}
 	while (num > 0)
 	{
-		buffer[i--] = (num % 10) + '0' + '0';
+		buffer[i--] = (num % 10) + '0';
+		num /= 10;
 	}
 	i++;
 	return (write_number(is_negative, i, buffer, flags

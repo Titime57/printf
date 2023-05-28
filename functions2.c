@@ -131,7 +131,7 @@ int print_reverse(va_list types, char buffer[], int flags
  * @size: Size specifier
  * Return: Number of chars printed.
  */
-int print_rot13strings(va_list types, char buffer[], int flags
+int print_rot13string(va_list types, char buffer[], int flags
 		, int width, int precision, int size)
 {
 	char x;
