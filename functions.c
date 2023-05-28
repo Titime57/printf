@@ -20,7 +20,8 @@ int print_char(va_list types, char buffer[], int flags
 /***********PRINT A STRING************/
 /**
  * print_string - prints a string
- * @types: list of arguments$@buffer: buffer array to handle print
+ * @types: list of arguments
+ * @buffer: buffer array to handle print
  * @flags: calculates active flags
  * @width: get width
  * @precision: precision specification
