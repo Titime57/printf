@@ -123,7 +123,8 @@ int print_int(va_list types, char buffer[], int flags
 	}
 	while (num > 0)
 	{
-		buffer[i--] = (num % 10) + '0' + '0';
+		buffer[i--] = (num % 10) + '0';
+		num /= 10;
 	}
 	i++;
 	return (write_number(is_negative, i, buffer, flags
