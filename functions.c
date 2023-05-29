@@ -43,7 +43,7 @@ int print_string(va_list types, char buffer[], int flags
 	{
 		str = "(null)";
 		if (precision >= 6)
-			str = " ";
+			str = "    ";
 	}
 	while (str[length] != '\0')
 		length++;
