@@ -1,5 +1,7 @@
 #include "main.h"
+
 void print_buffer(char buffer[], int *buff_ind);
+
 /**
  * _printf - printf function
  * @format: format
@@ -44,6 +46,7 @@ int _printf(const char *format, ...)
 	va_end(list);
 	return (printed_chars);
 }
+
 /**
  * print_buffer - prints the content of the buffer if it exist
  * @buffer: array of chars
