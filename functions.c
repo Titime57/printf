@@ -45,7 +45,11 @@ int print_string(va_list types, char buffer[],
 	{
 		str = "(null)";
 		if (precision >= 6)
+<<<<<<< HEAD
 			str = "      ";
+=======
+			str = "    ";
+>>>>>>> 02dd8e5517d02dcc144700d35a81d4c3c733fd6a
 	}
 
 	while (str[length] != '\0')
